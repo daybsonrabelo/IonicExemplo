@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>change-language</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <p>{{'teste.helloW' | translate}}</p>
+    <ion-button (click)="changeEn()">En</ion-button>
+    <ion-button (click)="changeEs()">Es</ion-button>
+    <ion-button (click)="changePt()">Pt</ion-button>
+  </div>
+</ion-content>

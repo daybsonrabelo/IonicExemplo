@@ -14,7 +14,15 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <!-- <strong>Ready to create an app?</strong>
+    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p> -->
+    <p>{{'teste.helloW' | translate}}</p>
+  
+    <ion-button (click)="applyDark()">{{'teste.dark' | translate}}</ion-button>
+    <ion-button (click)="removeDark()">{{'teste.removeDark' | translate}}</ion-button>
+    <ion-button (click)="goTo()">{{'teste.change' | translate}}</ion-button>
+
+    <app-comp-test></app-comp-test>
   </div>
+
 </ion-content>

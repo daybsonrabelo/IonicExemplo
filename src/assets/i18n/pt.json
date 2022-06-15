@@ -1,0 +1,8 @@
+{
+    "teste": {
+        "helloW" : "Olá mundo",
+        "change" : "Mudar linguagem",
+        "dark": "Escuro",
+        "removeDark": "Remover Escuro"
+    }
+}

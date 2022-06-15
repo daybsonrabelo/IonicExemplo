@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { ThemeService } from '../services/theme.service';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +9,23 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(
+    private theme: ThemeService,
+    private router: Router
+  ) {}
+
+  applyDark() {
+    this.theme.enableDark();
+    console.log('applyDark');
+  }
+
+  removeDark() {
+    this.theme.disableDark();
+    console.log('removeDark');
+  }
+
+  goTo() {
+    this.router.navigate(['/change-language'])
+  }
 
 }

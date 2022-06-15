@@ -1,27 +1,26 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
-import { HomePage } from './home.page';
 
-import { HomePageRoutingModule } from './home-routing.module';
+import { IonicModule } from '@ionic/angular';
 
+import { ChangeLanguagePageRoutingModule } from './change-language-routing.module';
+
+import { ChangeLanguagePage } from './change-language.page';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { CompTestComponent } from '../components/comp-test/comp-test.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, "./assets/i18n/", ".json");
 }
-
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule,
+    ChangeLanguagePageRoutingModule,
     TranslateModule.forChild({
       loader: {
         provide: TranslateLoader,
@@ -30,6 +29,6 @@ export function createTranslateLoader(http: HttpClient) {
       }
     })
   ],
-  declarations: [HomePage, CompTestComponent]
+  declarations: [ChangeLanguagePage]
 })
-export class HomePageModule {}
+export class ChangeLanguagePageModule {}

@@ -1,0 +1,8 @@
+{
+    "teste": {
+        "helloW" : "Hello World",
+        "change" : "Change language",
+        "dark": "Dark",
+        "removeDark": "Remove Dark"
+    }
+}
